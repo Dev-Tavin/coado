@@ -3,10 +3,11 @@
  * corretiva (RNF-003). A API converte em HTTP 422.
  */
 export class ErroDeRegra extends Error {
-  constructor(campo, mensagem, status = 422) {
+  constructor(campo, mensagem, status = 422, erros = undefined) {
     super(mensagem);
     this.name = 'ErroDeRegra';
     this.campo = campo;
     this.status = status;
+    this.erros = erros ?? [{ campo, mensagem }];
   }
 }
