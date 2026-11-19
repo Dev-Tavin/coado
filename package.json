@@ -12,7 +12,8 @@
     "test": "vitest run",
     "test:unit": "vitest run tests/unit --coverage",
     "test:integration": "vitest run tests/integration",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "capturas": "node scripts/capturas.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.119.0",
