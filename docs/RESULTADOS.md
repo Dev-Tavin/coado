@@ -102,7 +102,7 @@ CT-015 em diante:
 - **Comportamento obtido:** as 5 estrelas apareciam com cerca de 14 px, porque a regra CSS
   `.avaliar label` (0,9rem) sobrescrevia o tamanho definido para as estrelas.
 - **Comportamento esperado:** alvo de toque confortável no celular (cerca de 44 px).
-- **Status da correção:** [x] Resolvido no commit #[preencher]. Seletor mais específico em
+- **Status da correção:** [x] Resolvido no commit #6158381 (v0.5). Seletor mais específico em
   `web/src/estilo.css`, com 2rem e padding.
 - **Evidência:** print antes da correção (tirar de novo revertendo a regra, se quiserem) e
   `docs/prints/06-pedidos-*.png` depois.
@@ -115,7 +115,7 @@ CT-015 em diante:
   o salvamento era recusado com "Informe o horário no formato HH:MM".
 - **Comportamento esperado:** aceitar "24:00" como fechamento à meia-noite, como a RN-003
   permite.
-- **Status da correção:** [x] Resolvido no commit #[preencher]. Os campos de horário passaram a
+- **Status da correção:** [x] Resolvido no commit #6158381 (v0.5). Os campos de horário passaram a
   ser texto no formato HH:MM, validado pela API.
 
 Observação para o relatório: na primeira execução do Playwright, 4 de 16 testes falharam.

@@ -1,0 +1,17 @@
+# Render Blueprint: Render → New → Blueprint → escolher o repositório Dev-Tavin/coado.
+services:
+  - type: web
+    name: coado
+    runtime: node
+    plan: free
+    # Instala tudo (o Vite é dependência de desenvolvimento) e compila o front-end.
+    buildCommand: npm ci && npm run build
+    # "demo" recria os dados de demonstração a cada início, com as datas do dia.
+    # No plano gratuito o disco não é permanente: os dados voltam ao padrão quando o serviço reinicia.
+    startCommand: npm run demo
+    healthCheckPath: /api/saude
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: JWT_SECRET
+        generateValue: true

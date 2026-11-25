@@ -9,6 +9,7 @@
     "dev:web": "vite",
     "build": "vite build",
     "start": "node src/server.js",
+    "demo": "node -e \"require('fs').rmSync('data/coado.json',{force:true})\" && node src/server.js",
     "test": "vitest run",
     "test:unit": "vitest run tests/unit --coverage",
     "test:integration": "vitest run tests/integration",

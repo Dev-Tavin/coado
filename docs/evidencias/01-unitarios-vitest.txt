@@ -5,8 +5,8 @@
 
  Test Files  2 passed (2)
       Tests  38 passed (38)
-   Start at  13:57:58
-   Duration  806ms (transform 29%, import 29%, worker 28%, tests 14%)
+   Start at  12:37:18
+   Duration  738ms (import 37%, transform 31%, worker 22%, tests 10%)
 
  % Coverage report from v8
 ---------------|---------|----------|---------|---------|-------------------

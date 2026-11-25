@@ -1,4 +1,4 @@
-﻿node.exe : [WebServer] (node:15600) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+﻿node.exe : [WebServer] (node:6216) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
 No linha:1 caractere:1
 + & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
 + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -9,25 +9,25 @@ No linha:1 caractere:1
 
 Running 16 tests using 1 worker
 
-(node:5036) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(node:22476) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
 (Use `node --trace-warnings ...` to show where the warning was created)
-  ok  1 [celular-360] › tests\e2e\carrinho.spec.js:4:1 › CT-013: carrinho continua igual após recarregar a página (RNF-002) (821ms)
-  ok  2 [celular-360] › tests\e2e\carrinho.spec.js:14:1 › CT-012: fluxo feliz — login, feed, Pedir, checkout e pedido "recebido" (889ms)
-  ok  3 [celular-360] › tests\e2e\carrinho.spec.js:40:1 › CT-014: erro amigável no checkout abaixo do pedido mínimo (RNF-003) (827ms)
-  ok  4 [celular-360] › tests\e2e\carrinho.spec.js:57:1 › produto esgotado mostra "Esgotado" com o botão desabilitado (RN-006) (614ms)
-  ok  5 [celular-360] › tests\e2e\carrinho.spec.js:65:1 › fora do raio de 8 km: cafeteria não aparece no Explorar (RN-003) (665ms)
+  ok  1 [celular-360] › tests\e2e\carrinho.spec.js:4:1 › CT-013: carrinho continua igual após recarregar a página (RNF-002) (1.2s)
+  ok  2 [celular-360] › tests\e2e\carrinho.spec.js:14:1 › CT-012: fluxo feliz — login, feed, Pedir, checkout e pedido "recebido" (940ms)
+  ok  3 [celular-360] › tests\e2e\carrinho.spec.js:40:1 › CT-014: erro amigável no checkout abaixo do pedido mínimo (RNF-003) (771ms)
+  ok  4 [celular-360] › tests\e2e\carrinho.spec.js:57:1 › produto esgotado mostra "Esgotado" com o botão desabilitado (RN-006) (623ms)
+  ok  5 [celular-360] › tests\e2e\carrinho.spec.js:65:1 › fora do raio de 8 km: cafeteria não aparece no Explorar (RN-003) (630ms)
   ok  6 [celular-360] › tests\e2e\pedido-cafeteria.spec.js:4:1 › cafeteria avança o status até "entregue" e o cliente avalia; a avaliação aparece no feed (1.5s)
-  ok  7 [celular-360] › tests\e2e\pedido-cafeteria.spec.js:50:1 › cancelar só enquanto "recebido" (RN-007) (660ms)
+  ok  7 [celular-360] › tests\e2e\pedido-cafeteria.spec.js:50:1 › cancelar só enquanto "recebido" (RN-007) (710ms)
   ok  8 [celular-360] › tests\e2e\pedido-cafeteria.spec.js:67:1 › RNF-005: telas principais sem rolagem horizontal (3.0s)
-(node:27552) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(node:13652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
 (Use `node --trace-warnings ...` to show where the warning was created)
-  ok  9 [desktop-1440] › tests\e2e\carrinho.spec.js:4:1 › CT-013: carrinho continua igual após recarregar a página (RNF-002) (898ms)
-  ok 10 [desktop-1440] › tests\e2e\carrinho.spec.js:14:1 › CT-012: fluxo feliz — login, feed, Pedir, checkout e pedido "recebido" (940ms)
+  ok  9 [desktop-1440] › tests\e2e\carrinho.spec.js:4:1 › CT-013: carrinho continua igual após recarregar a página (RNF-002) (787ms)
+  ok 10 [desktop-1440] › tests\e2e\carrinho.spec.js:14:1 › CT-012: fluxo feliz — login, feed, Pedir, checkout e pedido "recebido" (925ms)
   ok 11 [desktop-1440] › tests\e2e\carrinho.spec.js:40:1 › CT-014: erro amigável no checkout abaixo do pedido mínimo (RNF-003) (770ms)
-  ok 12 [desktop-1440] › tests\e2e\carrinho.spec.js:57:1 › produto esgotado mostra "Esgotado" com o botão desabilitado (RN-006) (639ms)
-  ok 13 [desktop-1440] › tests\e2e\carrinho.spec.js:65:1 › fora do raio de 8 km: cafeteria não aparece no Explorar (RN-003) (679ms)
+  ok 12 [desktop-1440] › tests\e2e\carrinho.spec.js:57:1 › produto esgotado mostra "Esgotado" com o botão desabilitado (RN-006) (623ms)
+  ok 13 [desktop-1440] › tests\e2e\carrinho.spec.js:65:1 › fora do raio de 8 km: cafeteria não aparece no Explorar (RN-003) (587ms)
   ok 14 [desktop-1440] › tests\e2e\pedido-cafeteria.spec.js:4:1 › cafeteria avança o status até "entregue" e o cliente avalia; a avaliação aparece no feed (1.5s)
-  ok 15 [desktop-1440] › tests\e2e\pedido-cafeteria.spec.js:50:1 › cancelar só enquanto "recebido" (RN-007) (672ms)
+  ok 15 [desktop-1440] › tests\e2e\pedido-cafeteria.spec.js:50:1 › cancelar só enquanto "recebido" (RN-007) (687ms)
   ok 16 [desktop-1440] › tests\e2e\pedido-cafeteria.spec.js:67:1 › RNF-005: telas principais sem rolagem horizontal (3.0s)
 
-  16 passed (23.2s)
+  16 passed (24.0s)

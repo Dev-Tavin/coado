@@ -1,9 +1,39 @@
 ﻿
  RUN  v5.1.0 C:/Users/Gustavin/Documents/Testes/coado
 
+ ✓ tests/integration/pedidos.test.js > POST /pedidos > recusa pedido abaixo do mínimo (exemplo da seção 5.2) 97ms
+ ✓ tests/integration/auth-feed.test.js > Cadastro e login (RF-001) + segurança (RNF-004) > CT-011: senha gravada com hash bcrypt e rota sem token → 401 78ms
+ ✓ tests/integration/auth-feed.test.js > Cadastro e login (RF-001) + segurança (RNF-004) > cadastra cafeteria junto com o perfil da loja (RF-002) 18ms
+ ✓ tests/integration/pedidos.test.js > POST /pedidos > CT-010: pedido válido grava, baixa o estoque e começa como "recebido" 29ms
+ ✓ tests/integration/pedidos.test.js > POST /pedidos > recusa quantidade acima do estoque e produto esgotado (RN-006) 28ms
+ ✓ tests/integration/pedidos.test.js > POST /pedidos > recusa cafeteria a mais de 8 km (Pirabeiraba a partir do Centro) 31ms
+ ✓ tests/integration/auth-feed.test.js > Cadastro e login (RF-001) + segurança (RNF-004) > valida o cadastro e indica o campo (0) 16ms
+ ✓ tests/integration/auth-feed.test.js > Cadastro e login (RF-001) + segurança (RNF-004) > valida o cadastro e indica o campo (1) 16ms
+ ✓ tests/integration/auth-feed.test.js > Cadastro e login (RF-001) + segurança (RNF-004) > valida o cadastro e indica o campo (2) 21ms
+ ✓ tests/integration/auth-feed.test.js > Cadastro e login (RF-001) + segurança (RNF-004) > valida o cadastro e indica o campo (3) 15ms
+ ✓ tests/integration/auth-feed.test.js > Cadastro e login (RF-001) + segurança (RNF-004) > valida o cadastro e indica o campo (4) 16ms
+ ✓ tests/integration/auth-feed.test.js > Cadastro e login (RF-001) + segurança (RNF-004) > valida o cadastro e indica o campo (5) 15ms
+ ✓ tests/integration/auth-feed.test.js > Cadastro e login (RF-001) + segurança (RNF-004) > e-mail repetido → 409; senha errada → 401 com mensagem genérica 18ms
+ ✓ tests/integration/pedidos.test.js > POST /pedidos > recusa cafeteria fechada 23ms
+ ✓ tests/integration/pedidos.test.js > POST /pedidos > recusa produto de outra cafeteria no mesmo pedido 22ms
+ ✓ tests/integration/pedidos.test.js > POST /pedidos > cafeteria não pode fazer pedido 21ms
+ ✓ tests/integration/pedidos.test.js > Grãos de fidelidade (RN-002) > resgata, credita só na entrega e devolve ao cancelar 51ms
+ ✓ tests/integration/auth-feed.test.js > Cadastro e login (RF-001) + segurança (RNF-004) > JSON malformado → 400 15ms
+ ✓ tests/integration/auth-feed.test.js > Feed, curtidas e comentários (RF-004, RF-005, RN-005) > mostra só cafeterias seguidas, do mais recente ao mais antigo, com selo "Em alta" 20ms
+ ✓ tests/integration/auth-feed.test.js > Feed, curtidas e comentários (RF-004, RF-005, RN-005) > selo some quando as interações saem da janela de 24 h 18ms
+ ✓ tests/integration/auth-feed.test.js > Feed, curtidas e comentários (RF-004, RF-005, RN-005) > curtir alterna e comentar valida o texto 31ms
+ ✓ tests/integration/auth-feed.test.js > Explorar, seguir e painel da cafeteria (RF-002, RF-003, RF-006) > Explorar lista só cafeterias até 8 km, da mais próxima à mais distante 35ms
+ ✓ tests/integration/auth-feed.test.js > Explorar, seguir e painel da cafeteria (RF-002, RF-003, RF-006) > seguir faz os posts da cafeteria entrarem no feed; deixar de seguir tira 29ms
+ ✓ tests/integration/auth-feed.test.js > Explorar, seguir e painel da cafeteria (RF-002, RF-003, RF-006) > cafeteria publica produto (vira post), edita estoque e perfil 28ms
+ ✓ tests/integration/auth-feed.test.js > Explorar, seguir e painel da cafeteria (RF-002, RF-003, RF-006) > cliente não acessa o painel nem publica produto 19ms
+ ✓ tests/integration/pedidos.test.js > Status do pedido (RN-007) > só avança na ordem e não cancela depois de "recebido" 29ms
+ ✓ tests/integration/pedidos.test.js > Status do pedido (RN-007) > cliente não muda status e outra cafeteria não vê o pedido 31ms
+ ✓ tests/integration/pedidos.test.js > Avaliação (RN-004) e histórico (RF-012) > avalia pedido entregue e a avaliação aparece no feed 31ms
+ ✓ tests/integration/pedidos.test.js > Avaliação (RN-004) e histórico (RF-012) > recusa depois de 7 dias e nota fora de 1 a 5 25ms
+ ✓ tests/integration/pedidos.test.js > Avaliação (RN-004) e histórico (RF-012) > outro cliente não avalia pedido alheio 26ms
 
  Test Files  2 passed (2)
       Tests  30 passed (30)
-   Start at  13:58:00
-   Duration  1.44s (import 48%, tests 45%, transform 7%, worker 1%)
+   Start at  12:37:20
+   Duration  1.61s (import 61%, tests 31%, transform 8%)
 

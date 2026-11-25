@@ -8,10 +8,10 @@ Corresponde ao slide 9 do deck, "Demonstração ao vivo".
    24 h, que são criados quando o banco nasce. Um `data/coado.json` antigo não terá mais o selo.
    ```powershell
    cd C:\Users\Gustavin\Documents\Testes\coado
-   Remove-Item data\coado.json -ErrorAction SilentlyContinue
    npm run build
-   npm start
+   npm run demo    # recria os dados de demonstração com as datas de hoje e inicia o servidor
    ```
+   (`npm start` inicia sem recriar: use quando quiser manter dados que vocês mesmos criaram.)
    Espere aparecer `Coado rodando em http://localhost:3000`. Deixe esse terminal aberto.
 2. **Abrir duas janelas do navegador, lado a lado:**
    - Janela normal: http://localhost:3000, entrar com `cliente@coado.app` / `cafe123`.
@@ -71,7 +71,7 @@ npm run test:e2e           # 16 testes no navegador, ~25 s
 
 | Problema | O que fazer |
 |----------|-------------|
-| Selo "Em alta" não aparece | O banco é antigo: pare o servidor (Ctrl+C), apague `data\coado.json` e rode `npm start` de novo |
+| Selo "Em alta" não aparece | O banco é antigo: pare o servidor (Ctrl+C) e rode `npm run demo` |
 | Porta 3000 ocupada | `$env:PORT='3001'; npm start` e use http://localhost:3001 |
 | `npm` bloqueado no PowerShell | `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`, ou use o Prompt de Comando |
 | E2E reclama do navegador | `npx playwright install chromium` (precisa de internet; faça antes) |
