@@ -3,6 +3,9 @@
 Marketplace de cafeterias com formato de rede social: cada post é um produto que pode ser
 pedido ali mesmo. Projeto Integrado de **Testes de Software I** (Univille).
 
+**Acadêmicos:** Gustavo Henrique, Nikollas Mueller e Luiz Guilherme.
+**Repositório:** https://github.com/Dev-Tavin/coado
+
 Stack: **Node.js + Express** (API), **React + Vite** (front-end), **Supabase** (opcional),
 **Vitest**, **Supertest** e **Playwright** (testes).
 

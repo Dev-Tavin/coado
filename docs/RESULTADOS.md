@@ -1,5 +1,8 @@
 # Coado — resultados dos testes e complementos do documento técnico
 
+**Acadêmicos:** Gustavo Henrique, Nikollas Mueller e Luiz Guilherme.
+**1.2 Repositório oficial no GitHub:** https://github.com/Dev-Tavin/coado
+
 Material para completar as seções 5 a 8 do documento `Coado_Projeto_Integrado.pdf`.
 Números da execução de 19/11/2026. As saídas completas estão em `docs/evidencias/` e os
 prints das telas em `docs/prints/`.
@@ -27,10 +30,10 @@ Todos os 12 RFs foram implementados, inclusive os de prioridade Média e Baixa.
 
 | Nível | Ferramenta | Comando | Resultado |
 |-------|-----------|---------|-----------|
-| Unitário | Vitest 5.1 + coverage-v8 | `npm run test:unit` | **38 passed**; cobertura `src/domain/`: **96,2%** linhas/instruções, 92,5% ramos, 96,9% funções |
+| Unitário | Vitest 5.1 + coverage-v8 | `npm run test:unit` | **38 passed**; cobertura `src/domain/`: **96,2%** instruções, 95,8% linhas, 92,5% ramos, 96,9% funções |
 | Integração | Vitest + Supertest 7 | `npm run test:integration` | **30 passed** |
 | Sistema (E2E) | Playwright 1.65 (Chromium) | `npm run test:e2e` | **16 passed** (8 cenários × 2 larguras: 360 px e 1440 px) |
-| Aceitação | Roteiro manual | Aula 05 | a executar pela equipe parceira |
+| Aceitação | Roteiro manual | Aula 05 | **não realizada** (ver 5.4 abaixo) |
 
 Evidências para as Figuras 3, 4 e 5: `docs/evidencias/01-unitarios-vitest.txt`,
 `02-integracao-supertest.txt` e `03-e2e-playwright.txt`. Para prints do terminal, basta rodar
@@ -40,6 +43,20 @@ Figura 2 (telas): `docs/prints/` tem 7 telas em celular e desktop (login, feed, 
 checkout com erro, checkout válido, pedidos, painel). Elas foram geradas a partir do app real,
 não do Figma. Se vocês tiverem os protótipos do Figma, usem os dois: o protótipo e a tela
 implementada.
+
+## 5.4 Testes de aceitação cruzada (Aula 05)
+
+A homologação cruzada **não foi realizada**. O roteiro de aceitação da seção 5.4 do documento
+continua válido e pode ser aplicado depois. Texto sugerido para o documento:
+
+- **Equipe homologadora:** não houve.
+- **Acadêmicos homologadores:** não houve.
+- **Parecer final de homologação:** não emitido. A sessão da Aula 05 não aconteceu.
+- **Relato da sessão:** a homologação cruzada com a equipe parceira não pôde ser realizada
+  [completar com o motivo]. Por isso o sistema não foi testado por usuários de fora da equipe e
+  nenhum bug foi aberto por terceiros. Os três níveis automatizados (unitário, integração e
+  sistema) foram executados e estão descritos nas seções 5.1 a 5.3. O roteiro de aceitação desta
+  seção fica como o primeiro passo antes de um lançamento.
 
 ## 6.1 Plano de casos de teste: coluna Status
 
@@ -113,13 +130,15 @@ o que revelou o BUG-001.
 | Casos de teste planejados | 14 |
 | Casos executados | 14 (+ testes extras: 84 testes automatizados no total = 38 unitários + 30 integração + 16 E2E) |
 | Passaram na primeira execução | 14 de 14 casos do plano. Na bateria inteira: unitários 38/38, integração 30/30, E2E 12/16 (falhas do script de teste, ver seção 7) |
-| Bugs abertos (testes internos + homologação) | 2 internos; homologação: preencher após a Aula 05 |
+| Bugs abertos (testes internos + homologação) | 2 internos; 0 na homologação (não realizada) |
 | Bugs corrigidos | 2 de 2 |
-| Cobertura de código em `src/domain/` | 96,2% de linhas (meta 80%: atingida) |
+| Cobertura de código em `src/domain/` | 96,2% das instruções, 95,8% das linhas (meta 80%: atingida) |
 
-**Sugestão de parecer pelos critérios da 8.2:** todos os casos de prioridade Alta passam, não há
-bug Crítico ou Alto em aberto e a cobertura é ≥ 80%, então o enquadramento é "Pronto para
-lançamento", sujeito ao resultado da homologação da Aula 05. A decisão final é da equipe.
+**Parecer da equipe (o mesmo dos slides): pronto com ressalvas.** Os critérios da seção 8.2 foram
+atingidos: todos os casos de prioridade Alta passam, não há bug Crítico ou Alto em aberto e a
+cobertura é ≥ 80%. A ressalva é que a homologação cruzada da Aula 05 não foi realizada, então
+nenhum usuário de fora da equipe testou o sistema. Antes de um lançamento real, falta aplicar o
+roteiro de aceitação e testar com um projeto Supabase real.
 
 ## Diferenças em relação ao documento (ajustar no texto)
 
