@@ -33,7 +33,7 @@ Todos os 12 RFs foram implementados, inclusive os de prioridade Média e Baixa.
 | Unitário | Vitest 5.1 + coverage-v8 | `npm run test:unit` | **38 passed**; cobertura `src/domain/`: **96,2%** instruções, 95,8% linhas, 92,5% ramos, 96,9% funções |
 | Integração | Vitest + Supertest 7 | `npm run test:integration` | **30 passed** |
 | Sistema (E2E) | Playwright 1.65 (Chromium) | `npm run test:e2e` | **16 passed** (8 cenários × 2 larguras: 360 px e 1440 px) |
-| Aceitação | Roteiro manual | Aula 05 | **não realizada** (ver 5.4 abaixo) |
+| Aceitação | Roteiro manual | Aula 05 | **Aprovado** pela equipe parceira; 5 de 5 passos concluídos sem ajuda |
 
 Evidências para as Figuras 3, 4 e 5: `docs/evidencias/01-unitarios-vitest.txt`,
 `02-integracao-supertest.txt` e `03-e2e-playwright.txt`. Para prints do terminal, basta rodar
@@ -46,17 +46,27 @@ implementada.
 
 ## 5.4 Testes de aceitação cruzada (Aula 05)
 
-A homologação cruzada **não foi realizada**. O roteiro de aceitação da seção 5.4 do documento
-continua válido e pode ser aplicado depois. Texto sugerido para o documento:
+Sessão realizada em 25/11/2026, às 19h43, num notebook, com o sistema rodando localmente.
+A equipe parceira seguiu o roteiro sozinha e respondeu na ficha `Homologacao_Coado.html`.
 
-- **Equipe homologadora:** não houve.
-- **Acadêmicos homologadores:** não houve.
-- **Parecer final de homologação:** não emitido. A sessão da Aula 05 não aconteceu.
-- **Relato da sessão:** a homologação cruzada com a equipe parceira não pôde ser realizada
-  [completar com o motivo]. Por isso o sistema não foi testado por usuários de fora da equipe e
-  nenhum bug foi aberto por terceiros. Os três níveis automatizados (unitário, integração e
-  sistema) foram executados e estão descritos nas seções 5.1 a 5.3. O roteiro de aceitação desta
-  seção fica como o primeiro passo antes de um lançamento.
+- **Equipe homologadora:** equipe dos acadêmicos Lucas Meireles e Guilherme Alves.
+- **Acadêmicos homologadores:** Lucas Meireles e Guilherme Alves.
+- **Parecer final de homologação:** (X) **Aprovado**. A justificativa não foi preenchida na ficha.
+
+| Passo | Concluiu | Ajuda | Problemas |
+|-------|----------|-------|-----------|
+| 1. Criar conta e seguir cafeteria | Sim | Não | Nenhum |
+| 2. Pedir do feed e finalizar | Sim | Não | Nenhum |
+| 3. Pedido abaixo de R$ 15,00 | Sim | Não | Nenhum. Mensagem: "Pedido mínimo é R$ 15,00, adicione mais R$ 1,00" |
+| 4. Cafeteria: produto e status | Sim | Não | Nenhum |
+| 5. Avaliar e conferir no feed | Sim | Não | Nenhum |
+
+- **Facilidade de uso:** 5 de 5. Nenhuma mensagem de erro difícil de entender.
+- **Mais gostaram:** o limite de pedido mínimo, criar um produto novo e rolar o feed.
+- **Mais atrapalhou:** se o cliente não segue ninguém, o feed fica vazio. Registrado como
+  sugestão de melhoria, não como defeito, porque o comportamento segue o RF-004.
+- **Usariam o Coado:** sim; "site é simples e bem bonito, fácil de usar e responsivo".
+- **Problemas registrados:** nenhum.
 
 ## 6.1 Plano de casos de teste: coluna Status
 
@@ -130,15 +140,14 @@ o que revelou o BUG-001.
 | Casos de teste planejados | 14 |
 | Casos executados | 14 (+ testes extras: 84 testes automatizados no total = 38 unitários + 30 integração + 16 E2E) |
 | Passaram na primeira execução | 14 de 14 casos do plano. Na bateria inteira: unitários 38/38, integração 30/30, E2E 12/16 (falhas do script de teste, ver seção 7) |
-| Bugs abertos (testes internos + homologação) | 2 internos; 0 na homologação (não realizada) |
+| Bugs abertos (testes internos + homologação) | 2 internos; 0 na homologação |
 | Bugs corrigidos | 2 de 2 |
 | Cobertura de código em `src/domain/` | 96,2% das instruções, 95,8% das linhas (meta 80%: atingida) |
 
-**Parecer da equipe (o mesmo dos slides): pronto com ressalvas.** Os critérios da seção 8.2 foram
-atingidos: todos os casos de prioridade Alta passam, não há bug Crítico ou Alto em aberto e a
-cobertura é ≥ 80%. A ressalva é que a homologação cruzada da Aula 05 não foi realizada, então
-nenhum usuário de fora da equipe testou o sistema. Antes de um lançamento real, falta aplicar o
-roteiro de aceitação e testar com um projeto Supabase real.
+**Parecer da equipe (o mesmo dos slides e do documento): pronto para lançamento.** Os critérios
+da seção 8.2 foram atingidos: todos os casos de prioridade Alta passam, não há bug Crítico ou Alto
+em aberto e a cobertura é ≥ 80%. A equipe parceira também aprovou o sistema na homologação. Para
+produção, ainda recomenda-se testar com um projeto Supabase real.
 
 ## Diferenças em relação ao documento (ajustar no texto)
 
